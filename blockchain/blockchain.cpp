@@ -70,6 +70,7 @@ public:
 			if(this->chain[i].getprevHash() != this->chain[i-1].getHash()){
 				valid = false;
 			}
+			i++;
 		}
 		return valid;
 	}
@@ -82,6 +83,7 @@ public:
 
 int main() {
     Blockchain blockchain;
+	blockchain.creategenesisblock();
     int numBlocks;
     std::cout << "Enter the number of blocks to add: ";
     std::cin >> numBlocks;

@@ -5,16 +5,15 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
-#include "Orders.h"
-#include "Stock.h"
-#include "Trader.h"
-using namespace std;
+#include "../includes/Orders.h"
+#include "../includes/Stock.h"
+#include "../includes/Trader.h"
 
 class Orderbook{
 private:
-	unordered_map<int, Stock > stocks;
-	unordered_map<int,Trader>traders;
-	unordered_map<int,vector<Orders> >orders;
+	std::unordered_map<int, Stock* > stocks;
+    std::unordered_map<int,Trader*>traders;
+	unordered_map<int,vector<Orders*> >orders;
 	mutable mutex mx;
 public:
 	Orderbook();

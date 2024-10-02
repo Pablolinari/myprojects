@@ -5,6 +5,9 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
+#include "Orders.h"
+#include "Stock.h"
+#include "Trader.h"
 using namespace std;
 
 class Orderbook{

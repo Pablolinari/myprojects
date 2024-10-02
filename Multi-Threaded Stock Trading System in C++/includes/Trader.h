@@ -1,0 +1,33 @@
+#ifndef TRADER_H
+#define TRADER_H
+#include <string>
+#include "../includes/Stock.h"
+#include "../includes/Orders.h"
+class Trader {
+private:
+    int id;
+    double balance;
+    char type;
+    std::vector<Stock*> stocks;
+    std::vector<Order*> orders;
+	
+public:
+    Trader(int id, double balance) : id(id), balance(balance) {}
+    virtual ~Trader() = default;
+    int getID() const;
+    char getType() const;
+    double getBalance() const;
+    const std::vector<Stock*>& getStocks() const;
+    const std::vector<Order*>& getOrders() const;
+    void setId(int);
+    void setType(char);
+    void setBalance(double);
+    void addOrder(Order*);
+    void addStock(Stock*);
+    Stock* findStock(int) const;
+    virtual std::string createOrder(Stock*) = 0;
+
+};
+#endif // !TRADER_H
+#define TRADER_H
+

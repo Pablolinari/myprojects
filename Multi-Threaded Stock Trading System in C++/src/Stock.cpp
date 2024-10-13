@@ -1,4 +1,4 @@
-#include "../includes/Stock.h"
+#include "Stock.h"
 #include <string>
 Stock::Stock(std::string name , int id , double sellprice, double buyprice): name(name) , id(id), sellprice(sellprice),buyprice(buyprice){}
 std::string Stock::getName(){

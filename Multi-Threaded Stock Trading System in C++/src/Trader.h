@@ -1,8 +1,9 @@
 #ifndef TRADER_H
 #define TRADER_H
 #include <string>
-#include "../includes/Stock.h"
-#include "../includes/Orders.h"
+#include <vector>
+#include "Stock.h"
+#include "Orders.h"
 class Trader {
 private:
     int id;

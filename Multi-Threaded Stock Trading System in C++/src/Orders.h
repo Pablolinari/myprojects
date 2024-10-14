@@ -1,18 +1,23 @@
 #ifndef ORDER_H
 #define ORDER_H
-#endif // !ORDER_H
-#define ORDER_H
-
+#pragma once 
 #include <cerrno>
+#include <string>
+#include "Stock.h"
 class Order{
 private:
-	int *id;
-	Trader *trader;
-	Stock *stock;
-	int count;
+	std::string name;
+	int id;
+	Stock stock;
+	double count;
 	double price;
 public:
+	Order(int id , Stock stock , double count , double price ,std::string name );
 	int getId();
-	Trader getTrader();
 	Stock getStock();
+	double getCount();
+	double getPrice();
+	std::string getName();
+
 };
+#endif

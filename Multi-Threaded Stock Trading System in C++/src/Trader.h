@@ -10,7 +10,7 @@ private:
     double balance;
     char type;
     std::vector<Stock*> stocks;
-    std::vector<Order*> orders;
+    std::vector<Order> orders;
 	
 public:
     Trader(int id, double balance) : id(id), balance(balance) {}
@@ -30,5 +30,4 @@ public:
 
 };
 #endif // !TRADER_H
-#define TRADER_H
 

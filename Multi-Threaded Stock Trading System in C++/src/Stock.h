@@ -1,4 +1,4 @@
-
+#ifndef STOCK_H
 #define STOCK_H
 #include <string>
 class Stock{
@@ -18,3 +18,4 @@ public:
 	void setBuyprice(double buy_price);
 
 };
+#endif // !STOCK_H

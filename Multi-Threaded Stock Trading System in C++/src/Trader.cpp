@@ -1,6 +1,6 @@
 #include "Trader.h"
-#include <vector>
 int Trader::getID() const{
+
 	return this->id;
 }
 char Trader::getType()const{
@@ -9,6 +9,6 @@ char Trader::getType()const{
 double Trader::getBalance()const{
 	return this->balance;
 }
-	const std::vector<Stock*>& Trader::getStocks(){
+const std::vector<Stock*>& Trader::getStocks()const{
 	return this->stocks;
 }

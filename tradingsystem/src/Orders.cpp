@@ -1,5 +1,5 @@
-#include "Orders.h"
-#include "Stock.h"
+#include "../includes/Orders.h"
+#include "../includes/Stock.h"
 #include <memory>
 Order::Order(int id, Stock stock, double count , double price,std::string name ):id(id), stock(stock), count(count), price(price),name(name){}
 

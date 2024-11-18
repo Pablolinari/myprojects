@@ -8,13 +8,9 @@ class Trader {
 private:
     int id;
     double balance;
-    char type;
-    std::vector<Stock*> stocks;
-    std::vector<Order> orders;
 	
 public:
     Trader(int id, double balance) : id(id), balance(balance) {}
-    virtual ~Trader() = default;
     int getID() const;
     char getType() const;
     double getBalance() const;

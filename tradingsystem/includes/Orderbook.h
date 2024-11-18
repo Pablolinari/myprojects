@@ -11,14 +11,15 @@
 
 class Orderbook{
 private:
-	std::unordered_map<int, Stock* > stocks;
-    std::unordered_map<int,Trader*>traders;
-	unordered_map<int,vector<Orders*> >orders;
-	mutable mutex mx;
+	int id;
+	std::unordered_map<Trader,Stock > buy_orders;
+	std::unordered_map<Trader,Stock > sell_orders;
+
+
 public:
 	Orderbook();
-	void addOrder(ArchivedOrder*);
-    void addStock(Stock*);
+	void addBuyOrder(const Trader & t1,const Stock & s1);
+	void addSellOrder(const Trader & t1,const Stock & s1);
     void removeOrder(ArchivedOrder*);
     Stock* getStock(int) const;
     Trader* getTrader(int) const;

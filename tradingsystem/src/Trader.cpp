@@ -1,4 +1,4 @@
-#include "Trader.h"
+#include "../includes/Trader.h"
 int Trader::getID() const{
 
 	return this->id;

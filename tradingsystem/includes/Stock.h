@@ -12,7 +12,7 @@ public:
 	std::string getName();
 	int getId();
 	double getSellprice();
-	double getButprice();
+	double getBuyprice();
 	double getPrice();
 	void setSellprice(double sell_price);
 	void setBuyprice(double buy_price);

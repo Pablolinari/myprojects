@@ -11,7 +11,7 @@ int Stock::getId(){
 double Stock::getSellprice(){
 	return this->sellprice;
 }
-double Stock::getButprice(){
+double Stock::getBuyprice(){
 	return this->buyprice;
 }
 double Stock::getPrice(){
@@ -19,5 +19,8 @@ double Stock::getPrice(){
 }
 void Stock::setSellprice(double sell_price){
 	this->sellprice = sell_price;
+}
+void Stock::setBuyprice(double buy_price){
+	this->buyprice = buy_price;
 }
 

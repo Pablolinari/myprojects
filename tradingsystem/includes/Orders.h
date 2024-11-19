@@ -14,9 +14,9 @@ private:
 public:
 	Order(int id , Stock stock , double count , double price ,std::string name );
 	int getId();
-	Stock getStock();
-	double getCount();
-	double getPrice();
+	const Stock getStock();
+	const double getCount();
+	const double getPrice()const;
 	std::string getName();
 
 };

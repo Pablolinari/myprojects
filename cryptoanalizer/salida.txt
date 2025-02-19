@@ -1,4 +1,0 @@
-Order book update : {'e': 'avgPrice', 'E': 1739915493621, 's': 'BTCUSDT', 'i': '5m', 'w': '94790.80393184', 'T': 1739915493621}
-Order book update : {'e': 'avgPrice', 'E': 1739915494694, 's': 'BTCUSDT', 'i': '5m', 'w': '94790.75409348', 'T': 1739915494693}
-Order book update : {'e': 'avgPrice', 'E': 1739915495186, 's': 'BTCUSDT', 'i': '5m', 'w': '94790.73785753', 'T': 1739915495185}
-Order book update : {'e': 'avgPrice', 'E': 1739915496188, 's': 'BTCUSDT', 'i': '5m', 'w': '94790.56427599', 'T': 1739915496188}
